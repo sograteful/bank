@@ -5,7 +5,7 @@ const tweetButton=document.getElementById("tweet");
 const getNewQuote = async () =>
 {
     //api for quotes
-    var url="https://github.com/sograteful/bank/blob/main/quotes_array";    
+    var url="https://sograteful.github.io/bank/quotes_array.csv";    
 
     // fetch the data from api
     const response=await fetch(url);
