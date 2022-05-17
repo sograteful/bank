@@ -22,7 +22,7 @@ const getNewQuote = async () =>
 
     if(auth==null)
     {
-        author = "Unknown";
+        author = "Anonymous";
     }
 
     //function to dynamically display the quote and the author
