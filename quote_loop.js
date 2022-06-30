@@ -1,6 +1,6 @@
 const text=document.getElementById("quote");
 const author=document.getElementById("author");
-const tweetButton=document.getElementById("tweet");
+// const tweetButton=document.getElementById("tweet");
 
 const getNewQuote = async () =>
 {
@@ -20,16 +20,16 @@ const getNewQuote = async () =>
     // const quote=allQuotes[indx].text;
 
     //Store the author of the respective quote
-    // const auth=allQuotes[indx].author;
+    // const auth=[indx].author;
 
-    // if(auth==null)
-    // {
-    //     author = "Anonymous";
-    // }
 
     //function to dynamically display the quote and the author
-    // text.innerHTML=quote;
-    // author.innerHTML="~ "+auth;
+    text.innerHTML=quote;
+    author.innerHTML="~ "+auth;
+    
+    for(let quotation of allQuotes) {
+      console.log(quotation.text,quotation.author);
+    };
 
     //tweet the quote
     // tweetButton.href="https://twitter.com/intent/tweet?text="+quote+" ~ "+auth;
