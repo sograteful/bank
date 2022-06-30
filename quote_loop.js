@@ -26,11 +26,11 @@ const getNewQuote = async () =>
     text.innerHTML=quote;
     author.innerHTML="~ "+auth;
     
-    for(let quotation of allQuotes) {
-      console.log(quotation.text,quotation.author);
-    };
+    allQuotes.forEach(function(quotation) {
+      document.write(quotation.text + "<br />")
+      document.write(quotation.author + "<br /><br />")
+    });
 
-    //tweet the quote
-    // tweetButton.href="https://twitter.com/intent/tweet?text="+quote+" ~ "+auth;
+
 }
 getNewQuote();
