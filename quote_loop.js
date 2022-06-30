@@ -23,12 +23,13 @@ const getNewQuote = async () =>
 
 
     //function to dynamically display the quote and the author
-    text.innerHTML=quote;
-    author.innerHTML="~ "+auth;
+    // text.innerHTML=quote;
+    // author.innerHTML="~ "+auth;
     
     allQuotes.forEach(function(quotation) {
-      document.write(quotation.text + "<br />")
-      document.write(quotation.author + "<br /><br />")
+        
+      document.write(quotation.text + "<br />");
+      document.write(quotation.author + "<br /><br />");
     });
 
 
